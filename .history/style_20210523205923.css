@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background:rgb(171, 25, 190);
+}
+.container{
+    background:white;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    border-radius:10px; 
+    overflow: hidden;
+}
+.header{
+    text-align: center;
+    padding:10px 40px;
+    padding:1rem;
+    background:whitesmoke;
+    margin-bottom:1rem;
+}
+.form{
+    padding:20px 40px;
+}
+.form-control{
+    margin-bottom:0.5rem;
+    padding-bottom:1rem;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom:0.5rem;
+}
+.form-control input{
+    display: block;
+    border:2px solid #eee;
+    width:100%;
+    padding:0.7rem;
+    font-size:14px;
+    border-radius:10px;
+}
+.form-control i {
+    position: absolute;
+    top: 42px;
+    right:0.5rem;
+    visibility: hidden;
+}
+.form-control small {
+    position: absolute;
+    font-size:0.9rem;
+    bottom:0;
+    left:5px;
+    visibility: hidden;
+}
+
+#btn {
+    display: block;
+    width:100%;
+    background:rgb(171, 25, 190);
+    color:white;
+    padding:1rem;
+    border-radius: 6px;
+    border:none;
+    font-size:1rem;
+}
+
+.form-control.succes i.fa-check-circle{
+    visibility: visible;
+    color:lightgreen;
+}
+.form-control.succes input {
+    border:2px solid lightgreen;
+}
+
+
+.form-control.succes i.fa-check-circle{
+    visibility: visible;
+    color:lightgreen;
+}
+.form-control.error input {
+    border:2px solid lightcoral;
+}
